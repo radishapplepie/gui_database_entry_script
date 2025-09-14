@@ -97,6 +97,10 @@ def on_db_entry():
 		db_radio_var.set(0)
 		toggle_db_button()
 
+	#resets the radio button even if the not all variables set warning pops up
+	db_radio_var.set(0)
+	toggle_db_button()
+
 #radio button that is there to act as one more confimation that all the user input data is correct
 def toggle_db_button():
     if db_radio_var.get() == 1:
